@@ -52,8 +52,8 @@ const Index = () => {
               </span>
             </div>
             <h1 className="luxury-heading text-foreground mb-6">
-              Experience the Art of{" "}
-              <span className="text-gold">Exceptional</span> Living
+              Nasza Firma{" "}
+              <span className="text-gold">Najlepsza</span> w Łodzi
             </h1>
             <p className="luxury-subheading mb-10">
               Discover residences that blend timeless elegance with modern
