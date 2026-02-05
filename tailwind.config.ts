@@ -32,6 +32,7 @@ export default {
         charcoal: {
           DEFAULT: "hsl(var(--charcoal))",
           light: "hsl(var(--charcoal-light))",
+          deep: "hsl(var(--charcoal-deep))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
