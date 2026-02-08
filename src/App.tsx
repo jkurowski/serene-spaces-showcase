@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Apartments from "./pages/Apartments";
 import Gallery from "./pages/Gallery";
 import News from "./pages/News";
+import ArticleDetail from "./pages/ArticleDetail";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/apartments" element={<Apartments />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/news" element={<News />} />
+            <Route path="/news/:id" element={<ArticleDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
