@@ -86,16 +86,10 @@ const ArticleDetail = () => {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="relative h-[55vh] flex items-end">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${article.image})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
-        </div>
-        <div className="container mx-auto px-6 relative z-10 pb-12">
-          <Link to="/news" className="inline-flex items-center gap-2 text-gold text-sm uppercase tracking-wider mb-6 hover:text-gold-light transition-colors">
+      {/* Header */}
+      <section className="bg-charcoal-deep">
+        <div className="container mx-auto px-6 pt-12 pb-8">
+          <Link to="/news" className="inline-flex items-center gap-2 text-gold text-sm uppercase tracking-wider mb-8 hover:text-gold-light transition-colors">
             <ArrowLeft size={16} />
             Back to News
           </Link>
@@ -115,8 +109,17 @@ const ArticleDetail = () => {
         </div>
       </section>
 
+      {/* Full Image */}
+      <section className="container mx-auto px-6 py-10">
+        <img
+          src={article.image}
+          alt={article.title}
+          className="w-full max-h-[600px] object-cover"
+        />
+      </section>
+
       {/* Content */}
-      <section className="luxury-section">
+      <section className="pb-20 md:pb-32">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-gold text-lg font-light leading-relaxed mb-8 border-l-2 border-gold/40 pl-6">
