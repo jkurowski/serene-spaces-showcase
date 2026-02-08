@@ -130,10 +130,12 @@ const News = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   {featuredArticle.excerpt}
                 </p>
-                <Button variant="luxuryGhost" size="lg">
-                  Read More
-                  <ArrowRight size={18} />
-                </Button>
+                <Link to={`/news/${featuredArticle.id}`}>
+                  <Button variant="luxuryGhost" size="lg">
+                    Read More
+                    <ArrowRight size={18} />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -186,10 +188,12 @@ const News = () => {
                   <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
                     {article.excerpt}
                   </p>
-                  <Button variant="luxuryGhost" size="sm">
-                    Read More
-                    <ArrowRight size={14} />
-                  </Button>
+                  <Link to={`/news/${article.id}`}>
+                    <Button variant="luxuryGhost" size="sm">
+                      Read More
+                      <ArrowRight size={14} />
+                    </Button>
+                  </Link>
                 </div>
               </article>
             ))}
